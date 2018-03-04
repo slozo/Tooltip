@@ -16,6 +16,7 @@
 		CE6D6A77203CB442006955F5 /* Tooltip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D6A76203CB442006955F5 /* Tooltip.swift */; };
 		CE6D6A78203CB481006955F5 /* Tooltip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6D6A53203CB415006955F5 /* Tooltip.framework */; };
 		CE6D6A79203CB481006955F5 /* Tooltip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE6D6A53203CB415006955F5 /* Tooltip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE931242203F86B200EF0059 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE931241203F86B200EF0059 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CE6D6A6E203CB425006955F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6D6A70203CB425006955F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6D6A76203CB442006955F5 /* Tooltip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tooltip.swift; sourceTree = "<group>"; };
+		CE931241203F86B200EF0059 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				CE6D6A56203CB415006955F5 /* Tooltip.h */,
 				CE6D6A76203CB442006955F5 /* Tooltip.swift */,
+				CE931241203F86B200EF0059 /* Extensions.swift */,
 				CE6D6A57203CB415006955F5 /* Info.plist */,
 			);
 			name = Tooltip;
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6D6A77203CB442006955F5 /* Tooltip.swift in Sources */,
+				CE931242203F86B200EF0059 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
