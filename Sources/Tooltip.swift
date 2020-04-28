@@ -80,10 +80,10 @@ open class TooltipView: UIView {
     weak var presentingView: UIView?
     var arrowTip = CGPoint.zero
     internal(set) open var preferences: Preferences
-    open let text: String
+    public let text: String
     
     lazy var textSize: CGSize = { [unowned self] in
-        var attributes = [NSAttributedStringKey.font : self.preferences.drawing.font]
+        var attributes = [NSAttributedString.Key.font : self.preferences.drawing.font]
         var textSize = self.text.boundingRect(with: CGSize(width: self.preferences.positioning.maxWidth, height: CGFloat.greatestFiniteMagnitude), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attributes, context: nil).size
         textSize.width = ceil(textSize.width)
         textSize.height = ceil(textSize.height)
@@ -107,7 +107,7 @@ open class TooltipView: UIView {
         
         self.backgroundColor = .clear
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIDeviceOrientationDidChange, object: nil, queue: .main) { [weak self] notification in
+        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: nil, queue: .main) { [weak self] notification in
             guard let `self` = self, let superview = self.superview, self.presentingView != nil else { return }
             UIView.animate(withDuration: 0.3) {
                 self.arrange(withinSuperview: superview)
